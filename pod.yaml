@@ -8,10 +8,10 @@ metadata:
 spec:
   containers:
   - name: demo
-    image: chrisdennig/cosmos-mi:1.1
+    image: acrcosmosrbac.azurecr.io/cosmos-mi:1.5
     env:
       - name: Cosmos__Uri
-        value: "https://cosmos-2varraanuegcs.documents.azure.com:443/"
+        value: "https://cosmos-uxaofc53tab7g.documents.azure.com:443/"
       - name: Cosmos__Db
         value: "rbacsample"
       - name: Cosmos__Container

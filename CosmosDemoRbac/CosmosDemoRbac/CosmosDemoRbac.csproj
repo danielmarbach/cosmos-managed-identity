@@ -1,14 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <UserSecretsId>dotnet-CosmosDemoRbac-B2B07F5D-6B05-40E0-A358-E93C2A373647</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Azure.Identity" Version="1.4.1" />
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.21.0" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.23.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+        <PackageReference Include="NServiceBus.Persistence.CosmosDB" Version="1.1" />
+        <PackageReference Include="NServiceBus.Extensions.Hosting" Version="1.*" />
+        <PackageReference Include="NServiceBus" Version="7.*" />
     </ItemGroup>
 </Project>
